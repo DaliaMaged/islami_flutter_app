@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:islami/home/hadeth_tab/hadeth_details.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class HadethTab extends StatefulWidget {
   static String hadethScreen = 'hadeth-screen';
@@ -25,7 +26,7 @@ class _State extends State<HadethTab> {
           color: Theme.of(context).primaryColor,
         ),
         Text(
-          "الاحاديث",
+          "${AppLocalizations.of(context)!.ahadeth}",
           style: Theme.of(context).textTheme.titleLarge,
         ),
         Divider(

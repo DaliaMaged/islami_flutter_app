@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:islami/home/quran_tab/sura_name_item.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+
 
 class QuranTab extends StatefulWidget {
   static String quran_tab = "Quran_tab";
@@ -141,7 +143,7 @@ class _State extends State<QuranTab> {
               Column(
                 children: [
                   Text(
-                    "عدد الايات",
+                    "${AppLocalizations.of(context)!.no_ayat}",
                     style: Theme.of(context).textTheme.titleLarge,
                   ),
                   Divider(
@@ -153,7 +155,7 @@ class _State extends State<QuranTab> {
               Column(
                 children: [
                   Text(
-                    "اسم السورة",
+                    "${AppLocalizations.of(context)!.sura_name}",
                     style: Theme.of(context).textTheme.titleLarge,
                   ),
                   Divider(
