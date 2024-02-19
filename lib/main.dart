@@ -5,6 +5,7 @@ import 'package:islami/HomeScreen.dart';
 import 'package:islami/home/hadeth_tab/hadeth_details.dart';
 import 'package:islami/home/hadeth_tab/hadeth_tab.dart';
 import 'package:islami/home/quran_tab/sura_details.dart';
+import 'package:islami/home/sebha_tab.dart';
 import 'package:islami/home/settings_tab/setting_screen.dart';
 import 'package:islami/islami_theme.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
@@ -25,12 +26,14 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: IslamiTheme.lightMode,
+      darkTheme: IslamiTheme.darkMode,
       routes: {
         HomeScreen.homeScreen : (context) => HomeScreen(),
         SuraDetails.sura_details : (context) => SuraDetails(),
         HadethTab.hadethScreen : (context) => HadethTab(),
         HadethDetails.hadeth_details :(context) => HadethDetails(),
         SettingScreen.setting_screen :(context) => SettingScreen(),
+        SebhaTab.sebhaTab :(context) => SebhaTab(),
       },
       initialRoute: HomeScreen.homeScreen,
       locale: Locale("${provider.appLanguage}"),
