@@ -8,5 +8,8 @@
 "radio" : "Radio",
 "sebha" : "Tasbeeh",
 "settings" : "Setting",
-  "language" : "Language"
+  "language" : "Language",
+  "dark" : "Dark Mode",
+  "light" : "Light Mode",
+  "tasbeh_count" : "Tasbeeh count"
 }
